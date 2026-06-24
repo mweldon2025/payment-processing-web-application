@@ -8,12 +8,14 @@ Developed the checkout user interface using React and Bootstrap.
 Implemented payment validation logic using JavaScript.
 Created a transaction activity panel to display payment outcomes.
 Collaborated with team members throughout the software development lifecycle.
+
 Technologies Used
 React.js
 JavaScript
 HTML
 CSS
 Bootstrap
+
 Skills Demonstrated
 Front-End Development
 UI/UX Design

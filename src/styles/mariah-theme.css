@@ -1,0 +1,416 @@
+/* src/styles/mariah-theme.css */
+/* Manhattan-inspired light theme (palette only, layout unchanged) */
+
+/* Layout / background */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #fafafa; /* primary-white */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: #404040; /* neutrals-gray-2 */
+}
+
+/* Top bar */
+.top-bar {
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1; /* neutrals-gray-3 */
+  padding: 1.25rem 0;
+}
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+.brand-icon-box {
+  width: 40px;
+  height: 40px;
+  background: #2e67b2; /* accent-blue */
+  border: 1px solid #2e67b2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.brand-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #070606; /* primary-black */
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+.brand-subtitle {
+  font-size: 0.813rem;
+  color: #404040;
+  margin: 0;
+}
+.user-info-text {
+  color: #404040;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.user-name {
+  color: #070606;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Shared panel look */
+.panel {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 2rem;
+}
+.panel-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.panel-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #070606;
+  margin: 0 0 0.25rem 0;
+}
+.panel-description {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* Form controls (works with Bootstrap inputs) */
+.form-label-custom {
+  color: #404040;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.form-control {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  color: #070606;
+}
+.form-control::placeholder {
+  color: #b0b0b0; /* neutrals-gray-5 */
+}
+.form-control:focus {
+  background: #ffffff;
+  border-color: #2e67b2; /* accent-blue */
+  color: #070606;
+  box-shadow: 0 0 0 0.2rem rgba(46, 103, 178, 0.25);
+}
+.input-group-text {
+  background: #f0f0f0; /* neutrals-gray-4 */
+  border: 1px solid #d0d0d0;
+  color: #404040;
+}
+
+/* Disabled/readonly control fixes on light theme */
+.form-control:disabled,
+.form-control[readonly] {
+  background: #f0f0f0 !important;
+  border-color: #d0d0d0 !important;
+  color: #404040 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #404040;
+}
+.input-group .form-control:disabled,
+.input-group .form-control[readonly] {
+  background: #f0f0f0 !important;
+  color: #404040 !important;
+  opacity: 1 !important;
+}
+
+/* Buttons */
+.btn-dark, .btn-outline-dark, .btn-primary, .btn-secondary {
+  border-radius: 0.5rem;
+}
+
+/* Primary “Pay Now” button */
+.btn-process-payment {
+  background: #2e67b2; /* accent-blue */
+  border: 1px solid #2e67b2;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.875rem 2rem;
+  font-size: 0.938rem;
+  transition: all 0.2s;
+}
+.btn-process-payment:hover:not(:disabled) {
+  background: #14358f; /* ucb-dkblue */
+  border-color: #14358f;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Alerts */
+.alert-custom {
+  background: #f0f0f0;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #404040;
+  font-size: 0.875rem;
+}
+.alert-custom.success { border-left: 3px solid #25ac8d; } /* success-green */
+.alert-custom.error   { border-left: 3px solid #eb410d; } /* error-red */
+
+/* Utility */
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #070606;
+  margin: 0 0 1rem 0;
+}
+
+.text-on-dark,
+.panel,
+.brand-title,
+.section-title,
+.panel-title,
+.user-name {
+  color: #070606;
+}
+
+/* Give the main app container some breathing room */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Warehouse UI text contrast on light background */
+.form-label,
+.text-muted,
+.card-body,
+.card-body .small,
+.card-body .fw-semibold,
+.card-body h5 {
+  color: #404040 !important;
+}
+h5.text-center { color: #070606 !important; }
+
+/* Card background to match light panel style */
+.card.portal-card {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #404040;
+}
+
+/* "Muted" labels inside the card */
+.card.portal-card .text-muted {
+  color: #6c757d !important;
+}
+
+/* Top-right tab button text visibility, Manhattan blues */
+.btn-outline-dark {
+  color: #2e67b2 !important;
+  border-color: #2e67b2 !important;
+  background-color: transparent !important;
+}
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  background: rgba(0, 156, 222, 0.08) !important; /* accent-aqua tint */
+  color: #14358f !important;
+  border-color: #14358f !important;
+}
+.btn-dark {
+  background: #2e67b2 !important;
+  border-color: #2e67b2 !important;
+  color: #ffffff !important;
+}
+.btn-dark:hover {
+  background: #14358f !important;
+  border-color: #14358f !important;
+}
+
+/* OrderHistory visual tweaks */
+
+/* Table cells/headers in the Orders table */
+.card.portal-card .order-history-table th,
+.card.portal-card .order-history-table td,
+.card.portal-card .order-history-table td.fw-semibold {
+  color: #070606 !important;
+}
+
+/* Payment column muted text */
+.card.portal-card .order-history-table td.text-muted,
+.card.portal-card .order-history-table td.text-muted span,
+.card.portal-card .order-history-table td.text-muted small {
+  color: #404040 !important;
+}
+
+/* Status badges readable (white text on colored pill) */
+.card.portal-card .order-history-table td .badge,
+.card.portal-card .order-history-table .badge.bg-success,
+.card.portal-card .order-history-table .badge.bg-primary,
+.card.portal-card .order-history-table .badge.bg-danger,
+.card.portal-card .order-history-table .badge.bg-warning,
+.card.portal-card .order-history-table .badge.bg-secondary {
+  color: #ffffff !important;
+}
+
+/* Nav-pills styling for Current/Past tabs */
+.nav-pills .nav-link {
+  color: #404040;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+}
+.nav-pills .nav-link.active {
+  background: #2e67b2;
+  color: #ffffff !important;
+  border-color: #2e67b2;
+}
+.nav-pills .nav-link:hover:not(.active) {
+  color: #070606;
+  background: #f0f0f0;
+  border-color: #b0b0b0;
+}
+
+/* Subtle shake animation for invalid order ID input */
+@keyframes ws-shake-horizontal {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-3px); }
+  80% { transform: translateX(3px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: ws-shake-horizontal 0.3s ease;
+}
+
+/* Updated brand icon box to use actual logo image */
+.brand-icon-box {
+  width: 40px;
+  height: 40px;
+  background: transparent; /* remove old white box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px; /* optional */
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Warehouse Settlement — Load Button Fix */
+.settlement-load-btn {
+  background-color: #2e67b2 !important; /* MA accent blue */
+  color: #fff !important;
+  border-color: #2e67b2 !important;
+}
+
+.settlement-load-btn:disabled {
+  background-color: #a0a6ba !important; /* medium gray */
+  border-color: #a0a6ba !important;
+  color: #fff !important;
+  opacity: 1 !important; /* override bootstrap dimming */
+}
+
+/* Warehouse Settlement — Recent Order Buttons */
+.recent-order-btn {
+  background-color: #e1e1e1 !important;        /* MA neutrals-gray-3 */
+  border: 1px solid #b0b0b0 !important;        /* neutrals-gray-5 */
+  color: #1e1e1e !important;                   /* neutrals-gray-1 */
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+}
+
+.recent-order-btn:hover:not(:disabled) {
+  background-color: #d5d5d5 !important;
+  border-color: #999 !important;
+  color: #000 !important;
+}
+
+.recent-order-btn:disabled {
+  background-color: #f0f0f0 !important;        /* neutrals-gray-4 */
+  border-color: #ddd !important;
+  color: #aaa !important;
+  opacity: 1 !important;
+}
+
+/* === OrderHistory: filters + search on white background === */
+.panel .form-control,
+.panel .form-select {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #1e1e1e;
+}
+
+.panel .form-control::placeholder {
+  color: #b0b0b0;
+}
+
+/* OrderHistory: outline buttons (Export CSV, Clear filters) */
+.panel .btn-outline-light {
+  color: #2e67b2 !important;             /* MA accent blue */
+  border-color: #2e67b2 !important;
+  background-color: #ffffff !important;
+}
+
+.panel .btn-outline-light:hover:not(:disabled),
+.panel .btn-outline-light:focus-visible:not(:disabled) {
+  background-color: #2e67b2 !important;
+  color: #ffffff !important;
+  border-color: #2e67b2 !important;
+}
+
+.panel .btn-outline-light:disabled {
+  background-color: #f0f0f0 !important;
+  border-color: #e1e1e1 !important;
+  color: #b0b0b0 !important;
+  opacity: 1 !important; /* undo Bootstrap fade */
+}
+
+/* OrderHistory: pagination buttons in the card footer */
+.card.portal-card .btn-outline-light {
+  color: #2e67b2 !important;
+  border-color: #2e67b2 !important;
+  background-color: #ffffff !important;
+}
+
+.card.portal-card .btn-outline-light:hover:not(:disabled),
+.card.portal-card .btn-outline-light:focus-visible:not(:disabled) {
+  background-color: #2e67b2 !important;
+  color: #ffffff !important;
+  border-color: #2e67b2 !important;
+}
+
+.card.portal-card .btn-outline-light:disabled {
+  background-color: #f0f0f0 !important;
+  border-color: #e1e1e1 !important;
+  color: #b0b0b0 !important;
+  opacity: 1 !important;
+}
+
+.card.portal-card .form-select {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  color: #1e1e1e;
+}
+
+/* Improve readability of 'nothing left to settle' message on white background */
+.settle-info-warning,
+.text-warning {
+  color: #f47920 !important;   /* Manhattan secondary orange */
+  font-weight: 500;
+}

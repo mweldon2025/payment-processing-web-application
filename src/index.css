@@ -1,0 +1,80 @@
+/* src/index.css */
+:root{
+  --brand-bg: #0a1b2b;
+  --brand-primary: #0d6efd;
+  --brand-card: #ffffff;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: radial-gradient(circle at 50% -100px, #003366 0%, #02101e 70%) no-repeat;
+  color: #212529; /* dark by default so text on white card is readable */
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* App shell centering */
+.portal-wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portal-main {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;     /* change to center for vertical centering */
+  justify-content: center;     /* horizontal centering */
+  width: 100%;
+  padding: 2rem 1rem 4rem;
+}
+
+.portal-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;              /* keep centered */
+}
+
+/* Cards */
+/* Make card square corners and center all text inside */
+.portal-card {
+  background: #ffffff;
+  color: #212529;
+  border: 0;
+  border-radius: 0;              /* ← no rounded corners */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Center all typical text elements inside the card */
+.portal-card .card-body,
+.portal-card h2,
+.portal-card h5,
+.portal-card p,
+.portal-card .form-label {
+  text-align: center;
+}
+
+/* Center inputs and keep a nice, readable width */
+.portal-card .form-control {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make the divider line align with centered content nicely */
+.hr-soft {
+  height: 1px;
+  border: 0;
+  background: rgba(0,0,0,0.08);
+  margin: 0.75rem auto 1rem;
+  max-width: 760px;
+}
+
+/* Ensure Bootstrap button text is high-contrast */
+.btn-primary,
+.btn-dark {
+  color: #010000 !important;        /* always readable text */
+}
+
+/* Navbar width alignment */
+.navbar .container { max-width: 1100px; }

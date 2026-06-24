@@ -1,40 +1,132 @@
-Payment Processing Web Application
-Overview
+# Payment Processing Web Application
 
-Developed a responsive payment processing web application as part of a senior capstone project. The system simulated checkout functionality and transaction processing while emphasizing usability, validation, and responsive design.
+## Overview
 
-My Role--
-Developed the checkout user interface using React and Bootstrap.
-Implemented payment validation logic using JavaScript.
-Created a transaction activity panel to display payment outcomes.
-Collaborated with team members throughout the software development lifecycle.
+This project was developed as part of a senior capstone project in collaboration with Manhattan Associates. The application simulates an e-commerce payment workflow by allowing users to enter payment information, validate card details, authorize transactions through a mock API, and track transaction outcomes.
 
-Technologies Used--
-React.js
-JavaScript
-HTML
-CSS
-Bootstrap
+The system was built using React, JavaScript, Bootstrap, Node.js, Express, and SQLite, following Agile development practices and structured software documentation.
 
-Skills Demonstrated--
-Front-End Development
-UI/UX Design
-Form Validation
-JavaScript Logic
-Agile Development
-Software Development Lifecycle (SDLC)
+---
 
+## My Contributions
 
+- Developed the Payment Processing (Checkout) user interface using React and JavaScript.
+- Implemented client-side validation for payment inputs.
+- Added card type detection and validation logic.
+- Built responsive forms and components with Bootstrap.
+- Integrated the frontend with backend API endpoints.
+- Created transaction status feedback and session activity logging.
+- Produced architecture walkthroughs and technical documentation.
+
+---
+
+## Features
+
+- Payment checkout form
+- Client-side input validation
+- Card type detection
+- Mock payment authorization
+- Success and error handling
+- Session activity logging
+- Order management support
+- SQLite database integration
+- Responsive user interface
+
+---
+
+## Technology Stack
+
+### Frontend
+- React
+- JavaScript
+- HTML
+- CSS
+- Bootstrap 5
+
+### Backend
+- Node.js
+- Express
+
+### Database
+- SQLite
+- MySQL (planned extension)
+
+### Development Tools
+- Git
+- GitHub
+- Visual Studio Code
+
+---
+
+## System Architecture
+
+The application follows a layered architecture:
+
+- React frontend for user interaction
+- Node.js and Express API layer
+- SQLite database for data persistence
+- GitHub for version control
+
+---
+
+## Documentation
+
+The repository includes supporting project documentation:
+
+- Functional Requirements
+- Technical Design
+- System Documentation
+- Test Plan
+- User Manual
+- Project Presentation
+- Project Responsibilities
+- System Architecture Walkthrough Video
+
+---
+
+## Repository Structure
 payment-processing-web-application
+│
+├── README.md
+├── Functional_Requirements.pdf
+├── Project_Presentation.pdf
+├── Project_Responsibilities.pdf
+├── System_Architecture_Overview.mp4
+├── System_Documentation.pdf
+├── Technical_Design.pdf
+├── Test_Plan.pdf
+└── User_Manual.pdf
 
-README.md
+## Skills Demonstrated
 
-/docs
-    Functional_Requirements.pdf
-    Project_Presentation.pdf
-    Project_Responsibilities.pdf
-    System_Architecture_Overview.mp4
-    System_Documentation.pdf
-    Technical_Design.pdf
-    Test_Plan.pdf
-    User_Manual.pdf
+- Software Development Lifecycle (SDLC)
+- Requirements Analysis
+- Front-End Development
+- API Integration
+- Database Design
+- Data Modeling
+- Software Testing
+- Technical Documentation
+- Agile Development
+- Version Control with Git and GitHub
+
+---
+
+## Project Context
+
+Senior Capstone Project completed at Kennesaw State University in collaboration with Manhattan Associates.
+
+**Role:** Payment Processing UI Developer
+
+**Tools Used:** React, JavaScript, Bootstrap, Node.js, Express, SQLite, Git, GitHub
+
+## Source Code
+
+The repository contains the frontend components and validation logic developed for the payment processing workflow, including:
+
+- Checkout form components
+- Payment validation logic
+- Session activity tracking
+- Transaction status handling
+- Responsive UI styling
+

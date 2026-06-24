@@ -23,3 +23,18 @@ Form Validation
 JavaScript Logic
 Agile Development
 Software Development Lifecycle (SDLC)
+
+
+payment-processing-web-application
+
+README.md
+
+/docs
+    Functional_Requirements.pdf
+    Project_Presentation.pdf
+    Project_Responsibilities.pdf
+    System_Architecture_Overview.mp4
+    System_Documentation.pdf
+    Technical_Design.pdf
+    Test_Plan.pdf
+    User_Manual.pdf

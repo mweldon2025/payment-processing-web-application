@@ -10,6 +10,8 @@ The system was built using React, JavaScript, Bootstrap, Node.js, Express, and S
 
 ## My Contributions
 
+My primary responsibility was developing the Payment Processing (Checkout) UI, including client-side validation, transaction feedback, and frontend integration. The repository contains the complete team application, while my work focused on the checkout experience and payment workflow.
+
 - Developed the Payment Processing (Checkout) user interface using React and JavaScript.
 - Implemented client-side validation for payment inputs.
 - Added card type detection and validation logic.
@@ -91,7 +93,7 @@ The repository includes supporting project documentation:
 
 ## Source Code
 
-This repository contains frontend components and validation logic supporting the payment processing workflow, including:
+The repository contains the complete React application developed for the senior capstone project. Source code supporting the payment processing workflow includes:
 
 - Checkout form components
 - Payment validation logic

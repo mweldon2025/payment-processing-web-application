@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project was developed as part of a senior capstone project in collaboration with Manhattan Associates. The application simulates an e-commerce payment workflow by allowing users to enter payment information, validate card details, authorize transactions through a mock API, and track transaction outcomes.
+This project was developed as part of a senior capstone course using requirements provided by Manhattan Associates. The application simulates an e-commerce payment workflow by allowing users to enter payment information, validate card details, authorize transactions through a mock API, and track transaction outcomes.
 
-The system was built using React, JavaScript, Bootstrap, Node.js, Express, and SQLite, following Agile development practices and structured software documentation.
+The system was built using React, JavaScript, Bootstrap, Node.js, Express, and SQLite while following Agile development practices and structured software documentation.
 
 ---
 
@@ -17,20 +17,21 @@ The system was built using React, JavaScript, Bootstrap, Node.js, Express, and S
 - Integrated the frontend with backend API endpoints.
 - Created transaction status feedback and session activity logging.
 - Produced architecture walkthroughs and technical documentation.
+- Presented project deliverables and demonstrations based on stakeholder requirements provided by Manhattan Associates.
 
 ---
 
 ## Features
 
 - Payment checkout form
-- Client-side input validation
-- Card type detection
+- Client-side validation
+- Card type detection and validation
 - Mock payment authorization
 - Success and error handling
 - Session activity logging
 - Order management support
 - SQLite database integration
-- Responsive user interface
+- Responsive user interface built with Bootstrap
 
 ---
 
@@ -49,23 +50,12 @@ The system was built using React, JavaScript, Bootstrap, Node.js, Express, and S
 
 ### Database
 - SQLite
-- MySQL (planned extension)
+- MySQL 
 
 ### Development Tools
 - Git
 - GitHub
 - Visual Studio Code
-
----
-
-## System Architecture
-
-The application follows a layered architecture:
-
-- React frontend for user interaction
-- Node.js and Express API layer
-- SQLite database for data persistence
-- GitHub for version control
 
 ---
 
@@ -84,19 +74,6 @@ The repository includes supporting project documentation:
 
 ---
 
-## Repository Structure
-payment-processing-web-application
-│
-├── README.md
-├── Functional_Requirements.pdf
-├── Project_Presentation.pdf
-├── Project_Responsibilities.pdf
-├── System_Architecture_Overview.mp4
-├── System_Documentation.pdf
-├── Technical_Design.pdf
-├── Test_Plan.pdf
-└── User_Manual.pdf
-
 ## Skills Demonstrated
 
 - Software Development Lifecycle (SDLC)
@@ -112,17 +89,9 @@ payment-processing-web-application
 
 ---
 
-## Project Context
-
-Senior Capstone Project completed at Kennesaw State University in collaboration with Manhattan Associates.
-
-**Role:** Payment Processing UI Developer
-
-**Tools Used:** React, JavaScript, Bootstrap, Node.js, Express, SQLite, Git, GitHub
-
 ## Source Code
 
-The repository contains the frontend components and validation logic developed for the payment processing workflow, including:
+This repository contains frontend components and validation logic supporting the payment processing workflow, including:
 
 - Checkout form components
 - Payment validation logic
